@@ -84,13 +84,13 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
 .js .rv-l.in{opacity:1;transform:none}
 
 /* ---------- top bar ---------- */
-.topbar{background:var(--navy-deep);color:#c7d4e2;font-size:13px}
+/* .topbar{background:var(--navy-deep);color:#c7d4e2;font-size:13px}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:40px}
 .topbar a:hover{color:#fff}
 .tb-l,.tb-r{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .tb-l span,.tb-r a{display:inline-flex;align-items:center;gap:8px}
 .topbar .ic{font-size:15px;color:var(--champagne)}
-@media(max-width:760px){.tb-r{display:none}.tb-l{width:100%;justify-content:center}.tb-l .tb-addr{display:none}}
+@media(max-width:760px){.tb-r{display:none}.tb-l{width:100%;justify-content:center}.tb-l .tb-addr{display:none}} */
 
 /* ---------- header ---------- */
 .hdr{position:sticky;top:0;z-index:90;background:rgba(250,246,238,.82);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid transparent;transition:background .4s,box-shadow .4s,border-color .4s}
@@ -153,7 +153,7 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
 @media(max-width:420px){.brand b{font-size:15.5px}.brand small{font-size:9px;letter-spacing:.2em}.brand svg{width:42px;height:42px}}
 
 /* ---------- hero ---------- */
-.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 600px at 82% 8%,#e5f4ee 0%,transparent 60%),radial-gradient(800px 500px at 0% 100%,#f1e5c8 0%,transparent 60%),var(--ivory);padding-block:clamp(40px,6vw,84px) clamp(64px,8vw,110px)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 600px at 82% 8%,#e5f4ee 0%,transparent 60%),radial-gradient(800px 500px at 0% 100%,#f1e5c8 0%,transparent 60%),var(--ivory);padding-block:clamp(0px,0vw,0px) clamp(64px,8vw,110px)}
 .hero-deco{position:absolute;pointer-events:none;color:var(--emerald)}
 .hero-deco.d1{right:-120px;top:-60px;width:620px;opacity:.12;animation:drift 22s ease-in-out infinite}
 .hero-deco.d2{left:-80px;bottom:-40px;width:340px;opacity:.1;color:var(--gold);animation:drift 28s ease-in-out infinite reverse}
@@ -737,8 +737,11 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
 .cta-art .script{right:4%;top:24%;font-size:clamp(18px,2vw,28px);text-align:left}
 
 /* ---------- HERO v2 : banner style ---------- */
-.hero{min-height:clamp(560px,40vw,720px);padding:clamp(30px,3vw,48px) 0 0;background:linear-gradient(100deg,#fff 0,#f7fcfb 40%,#eaf6f4 100%)}
-.hero-grid{min-height:0;display:block}
+.hero {
+    min-height: clamp(560px,40vw,720px);
+    padding: 5px !important;
+    background: linear-gradient(100deg,#fff 0,#f7fcfb 40%,#eaf6f4 100%);
+}.hero-grid{min-height:0;display:block}
 .hero-copy{padding-bottom:clamp(110px,10vw,150px);max-width:min(640px,52%)}
 .hero h1{margin:22px 0 0;position:relative;padding-bottom:22px}
 .hero h1::after{content:"";position:absolute;left:2px;bottom:0;width:min(560px,92%);height:3px;border-radius:3px;background:linear-gradient(90deg,#b8964f,#e6d4ae 70%,transparent);transform-origin:left;animation:grow 1.4s var(--ease) 1s both}
@@ -759,7 +762,7 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
 .hero .trust li{font-size:12px;font-weight:600;color:#26332f}
 
 /* ---------- feature wave bar ---------- */
-.feat{position:relative;z-index:5;margin-top:-92px;padding:84px 0 22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%230d5b5e'/%3E%3Cstop offset='1' stop-color='%230a4252'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 30C200 6 380 -2 640 14S1120 50 1440 8V64H0Z' fill='url(%23g)'/%3E%3C/svg%3E") top/100% 64px no-repeat,linear-gradient(90deg,#0d5b5e,#0a4252) 0 63px/100% calc(100% - 63px) no-repeat;overflow:hidden}
+.feat{position:relative;z-index:5;margin-top:-92px;padding:34px 0 22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%230d5b5e'/%3E%3Cstop offset='1' stop-color='%230a4252'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 30C200 6 380 -2 640 14S1120 50 1440 8V64H0Z' fill='url(%23g)'/%3E%3C/svg%3E") top/100% 64px no-repeat,linear-gradient(90deg,#0d5b5e,#0a4252) 0 63px/100% calc(100% - 63px) no-repeat;overflow:hidden}
 .feat-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0}
 .fcard{position:relative;flex-direction:row;justify-content:center;align-items:center;gap:14px;text-align:left;padding:14px 10px;border-radius:0;background:transparent;border:0;box-shadow:none;overflow:visible;color:#fff;transition:transform .45s var(--ease)}
 .fcard+.fcard::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:1px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.35),transparent);opacity:1;inset:18% auto 18% 0;transition:opacity .3s}
@@ -859,6 +862,108 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
   .hero h1 em path{stroke-dashoffset:0}
 }
 
+
+
+/* ===== TOP BAR: GREEN BACKGROUND, WHITE TEXT ===== */
+.topbar,
+.top-bar {
+    background: #2a9d8a !important;
+    background-color: #2a9d8a !important;
+    color: #ffffff !important;
+}
+
+.topbar a,
+.topbar span,
+.topbar p,
+.top-bar a,
+.top-bar span,
+.top-bar p {
+    color: #ffffff !important;
+}
+
+.topbar svg,
+.topbar i,
+.top-bar svg,
+.top-bar i {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+/* ===== MAIN HEADER: DARK NAVY BACKGROUND ===== */
+.hdr,
+.hdr.scrolled {
+    background: #0a1a2f !important;
+    background-color: #0a1a2f !important;
+}
+
+/* ===== NAVIGATION LINKS: WHITE TEXT ===== */
+.hdr nav a,
+.hdr .nav a,
+.hdr .nav-link {
+    color: #ffffff !important;
+}
+
+/* ===== SERVICES DROPDOWN ARROW ===== */
+.hdr nav svg,
+.hdr .nav svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+/* ===== NAVIGATION HOVER ===== */
+.hdr nav a:hover,
+.hdr .nav a:hover {
+    color: #2a9d8a !important;
+}
+
+/* ===== ACTIVE MENU LINK ===== */
+.hdr nav a.active,
+.hdr .nav a.active {
+    color: #ffffff !important;
+}
+
+
+
+/* ===== FIX v3: header lag, scroll perf, mobile menu ===== */
+.hdr,.hdr.scrolled{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;animation:none!important;transition:box-shadow .25s!important}
+.hdr.scrolled{box-shadow:0 6px 18px rgba(0,0,0,.28)!important}
+.hdr .wrap,.hdr.scrolled .wrap{height:var(--hdr-h)!important;transition:none!important}
+.brand svg,.brand:hover svg{transition:none!important;transform:none!important}
+.brand b{color:#fff!important}
+.brand small{color:var(--champagne)!important}
+.hdr .nav>a,.hdr .nav .has-mega>.mt{color:#fff!important}
+.hdr .nav>a.on,.hdr .nav .has-mega>.mt.on{color:#7fd3bd!important}
+.hdr .chev-btn{color:#fff!important}
+.hdr .btn-solid{background:#1d7a69!important;color:#fff!important;box-shadow:none!important}
+.hdr .btn-solid:hover{background:#2a9d8a!important}
+.hdr .btn-solid::after{display:none}
+.hdr .mega a{color:var(--navy)!important}
+.hdr .mega a:hover{color:var(--emerald)!important}
+.hdr nav .mega a svg{color:var(--emerald)!important;stroke:var(--emerald)!important}
+.hdr .mega .mega-aside a{color:var(--champagne)!important}
+.hdr .mega .mega-aside a:hover{color:#fff!important}
+.hdr nav .mega .mega-aside a svg{color:currentColor!important;stroke:currentColor!important}
+.burger{background:transparent!important;border:1.5px solid rgba(255,255,255,.4)!important;color:#fff!important}
+.burger svg{stroke:#fff!important}
+@media(max-width:1020px){
+  .hdr{background:#0a1a2f!important}
+  .burger{display:flex!important}
+  .hdr-cta{display:none!important}
+  .nav{background:#0a1a2f!important;-webkit-mask-image:none!important;mask-image:none!important;height:100vh;height:100dvh;bottom:auto!important;z-index:-1}
+  .nav>a,.nav .has-mega>.mt{border-bottom:1px solid rgba(255,255,255,.14)!important;color:#fff!important}
+  .nav .chev-btn{border-bottom:1px solid rgba(255,255,255,.14)!important}
+  .nav .m-cta{display:inline-flex!important;width:100%;margin-top:22px;justify-content:center}
+  .hdr .nav .m-cta{color:#fff!important}
+  .mega-in{margin:10px 0 16px!important}
+}
+.leaf{animation:none!important;filter:none!important}
+.h-brain,.h-glow,.blob,.cta::before{animation:none!important}
+.h-brain{mix-blend-mode:normal!important}
+.ha-glow{display:none!important}
+.cta .btn,.fab a.wa{animation:none!important}
+.glass,.ibox{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.pf-marq.paused .pf-track{animation-play-state:paused}
+@media(max-width:1020px){.g-name,.g-opd,.h-quote,.whyb .script,.doc-ph .badge .ic{animation:none!important}}
 </style>
 </head>
 <body>
@@ -916,7 +1021,7 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
 <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7.500 9 7.500"/><path d="M5.500 9.500V20h13V9.500"/><path d="M10 20v-6h4v6"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.500 3.500-7 8-7s8 2.500 8 7"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.500 2.500 0 114 2c-1 .8-1.500 1.200-1.500 2.500"/><path d="M12 17.500v.01"/></symbol><symbol id="i-pulse" viewBox="0 0 24 24"><path d="M12 20C5 15 3 11.500 3 8.500a4.500 4.500 0 018-2.500 4.500 4.500 0 018 2.500c0 3-2 6.500-7 11.500z"/><path d="M6 12h3l1.500-3 2.500 6 1.500-3H18"/></symbol><symbol id="i-lotus" viewBox="0 0 24 24"><path d="M12 4c2.500 2.500 3.500 6 0 11-3.500-5-2.500-8.500 0-11z"/><path d="M12 15c-1-3.500-4-5.500-8-5.500.5 4.500 3.500 7.500 8 7.500s7.500-3 8-7.500c-4 0-7 2-8 5.500z"/><path d="M4 18c2.500 2 5 2.500 8 2.500s5.500-.5 8-2.500"/></symbol><symbol id="i-chev-d" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="i-calcheck" viewBox="0 0 24 24"><rect x="3.500" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.500 10h17"/><path d="M9 15l2 2 4-4"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.400 6.100 20.500l1.200-6.500L2.500 9.400l6.600-.9z"/></symbol></defs></svg>
 
 <!-- top bar -->
-<div class="topbar">
+<!-- <div class="topbar">
   <div class="wrap">
     <div class="tb-l">
       <span class="tb-addr"><svg class="ic " aria-hidden="true"><use href="#i-pin"/></svg>Opp. P.C. Jewellers, Boring Road, Patna</span>
@@ -929,13 +1034,14 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
       <a href="https://www.youtube.com/watch?v=Q8b1_qp7Z_M" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 00-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 002.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 001.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 001.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- header -->
 <header class="hdr" id="hdr">
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Buddha Neuro Psychiatry, home">
-      <svg viewBox="0 0 64 64" role="img" aria-label="Buddha Neuro Psychiatry logo"><use href="#logo"/></svg>
+
+<img src="logo.png" alt="Buddha Neuro Psychiatry Logo" class="logo-img" width="80" height="80" style="width: 80px; height: 80px; object-fit: contain;">
       <span><b>Buddha Neuro Psychiatry</b><small>BRAIN AND MIND CLINIC</small></span>
     </a>
     <nav class="nav" id="nav" aria-label="Main">
@@ -1437,19 +1543,26 @@ svg.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;strok
   window.addEventListener('resize', function(){ if(window.innerWidth > 1020) closeNav(); });
 
   var links = $$('.nav [data-spy]');
-  var spyIds = ['home','about','services','reviews','faq','appointment'];
-  var bookFab = $('#bookFab'), toTop = $('#toTop');
-  function onScroll(){
-    var y = window.scrollY;
-    hdr.classList.toggle('scrolled', y > 24);
-    toTop.classList.toggle('show', y > 700);
-    var hero = $('#home'); var past = hero ? hero.offsetHeight * .7 : 600;
-    bookFab.classList.toggle('show', y > past);
-    var cur = 'home', probe = y + 140;
-    spyIds.forEach(function(id){ var el = document.getElementById(id); if(el && el.getBoundingClientRect().top + y <= probe) cur = id; });
-    links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('data-spy') === cur); });
-  }
-  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+var spyIds = ['home','about','services','reviews','faq','appointment'];
+var bookFab = $('#bookFab'), toTop = $('#toTop');
+var tops = [], pastHero = 600, ticking = false, st = {s:null, t:null, b:null, c:null};
+function measure(){ var y = window.scrollY;
+  tops = spyIds.map(function(id){ var el = document.getElementById(id); return el ? el.getBoundingClientRect().top + y : Infinity; });
+  var hero = $('#home'); pastHero = hero ? hero.offsetHeight * .7 : 600; }
+function onScroll(){ var y = window.scrollY, probe = y + 140, cur = 'home';
+  var s = y > 24, t = y > 700, b = y > pastHero;
+  if(s !== st.s){ st.s = s; hdr.classList.toggle('scrolled', s); }
+  if(t !== st.t){ st.t = t; toTop.classList.toggle('show', t); }
+  if(b !== st.b){ st.b = b; bookFab.classList.toggle('show', b); }
+  for(var i = 0; i < spyIds.length; i++){ if(tops[i] <= probe) cur = spyIds[i]; }
+  if(cur !== st.c){ st.c = cur; links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('data-spy') === cur); }); } }
+function req(){ if(!ticking){ ticking = true; requestAnimationFrame(function(){ ticking = false; onScroll(); }); } }
+window.addEventListener('scroll', req, {passive:true});
+window.addEventListener('resize', function(){ measure(); req(); });
+window.addEventListener('load', function(){ measure(); onScroll(); });
+measure(); onScroll();
+var marq = $('.pf-marq');
+if(marq && 'IntersectionObserver' in window){ new IntersectionObserver(function(es){ marq.classList.toggle('paused', !es[0].isIntersecting); }).observe(marq); }
   toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'}); });
 
   /* ---------- scroll reveal ---------- */
